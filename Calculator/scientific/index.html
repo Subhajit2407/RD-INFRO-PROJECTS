@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator - Casio fx-991EX</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="theme-container">
+        <label class="switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider"></span>
+        </label>
+        <span class="mode-text">Dark Mode</span>
+    </div>
+
+    <div class="calculator">
+        <div class="display">
+            <div id="history"></div>
+            <div id="current">0</div>
+        </div>
+
+        <div class="buttons">
+            <button onclick="clearDisplay()">AC</button>
+            <button onclick="deleteLast()">DEL</button>
+            <button onclick="toggleSign()">±</button>
+            <button onclick="appendOperator('/')">÷</button>
+
+            <button onclick="square()">x²</button>
+            <button onclick="cube()">x³</button>
+            <button onclick="power()">xʸ</button>
+            <button onclick="appendOperator('*')">×</button>
+
+            <button onclick="sqrt()">√</button>
+            <button onclick="cbrt()">∛</button>
+            <button onclick="nthRoot()">ⁿ√</button>
+            <button onclick="appendOperator('-')">−</button>
+
+            <button onclick="log()">log</button>
+            <button onclick="ln()">ln</button>
+            <button onclick="exp()">e^x</button>
+            <button onclick="appendOperator('+')">+</button>
+
+            <button onclick="factorial()">n!</button>
+            <button onclick="combination()">nCr</button>
+            <button onclick="permutation()">nPr</button>
+            <button onclick="calculateResult()">=</button>
+
+            <button onclick="appendNumber(7)">7</button>
+            <button onclick="appendNumber(8)">8</button>
+            <button onclick="appendNumber(9)">9</button>
+
+            <button onclick="appendNumber(4)">4</button>
+            <button onclick="appendNumber(5)">5</button>
+            <button onclick="appendNumber(6)">6</button>
+
+            <button onclick="appendNumber(1)">1</button>
+            <button onclick="appendNumber(2)">2</button>
+            <button onclick="appendNumber(3)">3</button>
+
+            <button onclick="appendNumber(0)">0</button>
+            <button onclick="appendDecimal()">.</button>
+            <button onclick="usePi()">π</button>
+            <button onclick="useE()">e</button>
+        </div>
+    </div>
+
+    <script src="calci.js"></script>
+</body>
+</html>
